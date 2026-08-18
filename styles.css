@@ -1,0 +1,269 @@
+/* Sticky Notes Plugin Styles */
+
+.vc-stickynotes-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    font-size: 10px;
+    cursor: pointer;
+    margin-left: 4px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    flex-shrink: 0;
+}
+
+.vc-stickynotes-badge:hover {
+    transform: scale(1.15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.vc-stickynotes-badge-icon {
+    width: 12px;
+    height: 12px;
+}
+
+/* User popout sticky note */
+.vc-stickynotes-popout {
+    margin-top: 8px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border-left: 4px solid;
+    font-size: 14px;
+    line-height: 1.5;
+    word-break: break-word;
+    position: relative;
+    color: #fff;
+}
+
+.vc-stickynotes-popout * {
+    color: #fff;
+}
+
+.vc-stickynotes-popout-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.vc-stickynotes-popout-label {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    opacity: 0.7;
+}
+
+.vc-stickynotes-popout-actions {
+    display: flex;
+    gap: 4px;
+}
+
+.vc-stickynotes-popout-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+    transition: opacity 0.15s ease, background-color 0.15s ease;
+}
+
+.vc-stickynotes-popout-btn:hover {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.vc-stickynotes-popout-btn svg {
+    width: 14px;
+    height: 14px;
+}
+
+.vc-stickynotes-popout-text {
+    margin: 0;
+    color: #fff;
+}
+
+.vc-stickynotes-popout-date {
+    font-size: 11px;
+    opacity: 0.5;
+    margin-top: 6px;
+    color: #fff;
+}
+
+/* Formatted text spans */
+.vc-stickynotes-bold {
+    font-weight: 700;
+}
+
+.vc-stickynotes-colored {
+    /* color set via inline style */
+}
+
+/* === MODAL SECTIONS === */
+
+/* Input section - note text */
+.vc-stickynotes-input-section {
+    margin-bottom: 16px;
+}
+
+.vc-stickynotes-textarea {
+    width: 100%;
+    min-height: 80px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 2px solid var(--background-modifier-accent);
+    background: var(--input-background);
+    color: var(--text-normal);
+    font-size: 14px;
+    resize: vertical;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s ease;
+    box-sizing: border-box;
+}
+
+.vc-stickynotes-textarea:focus {
+    border-color: var(--brand-500);
+}
+
+/* Formatting section */
+.vc-stickynotes-format-section {
+    margin-bottom: 16px;
+    padding: 10px 12px;
+    background: var(--background-secondary);
+    border-radius: 8px;
+}
+
+.vc-stickynotes-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 6px;
+}
+
+.vc-stickynotes-toolbar-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid var(--background-modifier-accent);
+    background: var(--background-tertiary);
+    color: var(--interactive-normal);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.15s ease;
+}
+
+.vc-stickynotes-toolbar-btn:hover {
+    background: var(--background-modifier-hover);
+    border-color: var(--interactive-hover);
+    color: var(--interactive-hover);
+    transform: translateY(-1px);
+}
+
+.vc-stickynotes-toolbar-btn:active {
+    transform: translateY(0);
+}
+
+.vc-stickynotes-toolbar-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+.vc-stickynotes-toolbar-sep {
+    width: 1px;
+    height: 24px;
+    background: var(--background-modifier-accent);
+    margin: 0 4px;
+}
+
+.vc-stickynotes-toolbar-color {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid var(--background-modifier-accent);
+    cursor: pointer;
+    transition: transform 0.15s ease;
+    margin-left: 4px;
+}
+
+.vc-stickynotes-toolbar-color:hover {
+    transform: scale(1.15);
+}
+
+.vc-stickynotes-format-hint {
+    margin-top: 8px;
+    padding: 6px 8px;
+    background: var(--background-tertiary);
+    border-radius: 4px;
+    font-size: 12px;
+    color: var(--interactive-muted);
+    font-style: italic;
+}
+
+/* Preview section */
+.vc-stickynotes-preview-section {
+    margin-bottom: 16px;
+}
+
+.vc-stickynotes-preview {
+    margin-top: 6px;
+    padding: 8px 10px;
+    background: var(--background-tertiary);
+    border-radius: 6px;
+    font-size: 13px;
+    min-height: 20px;
+}
+
+/* Color section */
+.vc-stickynotes-color-section {
+    margin-bottom: 8px;
+}
+
+.vc-stickynotes-color-picker {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 6px;
+}
+
+.vc-stickynotes-color-swatch {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    cursor: pointer;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.vc-stickynotes-color-swatch:hover {
+    transform: scale(1.15);
+}
+
+.vc-stickynotes-color-swatch.selected {
+    border-color: var(--text-normal);
+    transform: scale(1.1);
+}
+
+.vc-stickynotes-custom-color {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+/* Tooltip for badge */
+.vc-stickynotes-tooltip {
+    max-width: 250px;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
