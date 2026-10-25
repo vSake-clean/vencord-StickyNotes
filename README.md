@@ -90,3 +90,17 @@ Or use the toolbar buttons in the modal:
 ## License
 
 GPL-3.0-or-later
+
+---
+
+## More projects by vSake
+
+- **[Fih](https://github.com/vSake-clean/Fih)** — programming language with a compiler written in pure x86-64 assembly, no libc
+- **[Szept](https://github.com/vSake-clean/Szept)** — serverless Android messenger
+- **[LunarDraw](https://github.com/vSake-clean/LunarDraw)** — GTK3/Cairo drawing app with layers
+- **[LuminaView](https://github.com/vSake-clean/LuminaView)** — fast, lightweight Qt5 image viewer for Linux
+- **[StatusCycler](https://github.com/vSake-clean/StatusCycler)** — Vencord plugin that cycles your Discord custom status
+- **[vencord-AutoReply](https://github.com/vSake-clean/vencord-AutoReply)** — Vencord plugin for automatic replies with triggers and filters
+- **[vencord-friendgroups](https://github.com/vSake-clean/vencord-friendgroups)** — Vencord plugin to group friends in the DM sidebar
+
+If you like this project, consider leaving a ⭐ — it really helps!
